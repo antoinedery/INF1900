@@ -1,0 +1,38 @@
+****************************************************************************
+Fichier : 	LISEZMOI.txt
+Description : 	Instructions pour les correcteurs
+Équipe : 	03-18
+Auteurs : 	Alexander Ciaciek, Antoine Déry, Stéphanie Ly, Wael Tarifi
+****************************************************************************
+
+
+Étapes pour simuler le projet :
+
+1) Compiler la librairie, qui se retrouve dans le répertoire /inf1900-0318/lib_dir/
+2) Compiler l'exécutable, qui se retrouve dans le répertoire /inf1900-0318/projet/
+3) Démarrer SimulIDE et charger le fichier montage.simu, qui se retrouve dans /inf1900-0318/projet/
+4) Charger le firmware exec.hex dans le microcontrôleur, qui se retouve dans /inf1900-0318/projet/
+5) Démarrer la simulation
+
+
+****************************************************************************
+
+Pour aider la correction, voici les classes de la librairie utilisées pour le projet
+Les fichiers .cpp et .h sont du même nom : 
+
+- Action
+- Can
+- Cast
+- Clock
+- Container
+- Display
+- Door
+- Interrupt
+- Keypad
+- LCD
+- Port
+- Servo
+- State
+- Time
+- Usart
+

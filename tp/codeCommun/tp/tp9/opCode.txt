@@ -1,0 +1,74 @@
+DBT;
+    //Le clignotement vert indique la lecture du bytecode
+    dbc 2;
+      dal 1;  //vert
+      att 40;
+      det;    //eteindre del
+      att 40;
+      
+    fbc;
+
+    mon 240;  //Allumer matrice 4x4
+    //Choregraphie - test des fonctionalités
+    dbc 1;
+      mav 128;    //avancer 50%               //vers nord
+      att 80;     //2 sec (80*25 ms)
+
+      trd;        //rotation à gauche 90      //vers est
+
+      trd;        //rotation à gauche 90      //vers sud
+
+      trd;        //rotation à gauche 90      //vers ouest
+
+      trd;        //rotation à gauche 90      //vers nord
+    fbc;
+
+    mar;        //arreter moteurs
+    mof;
+    att 80;
+
+    mon 240;  //Allumer matrice 4x4 (deux premières colonnes seulement)
+    dbc 1;
+      mre 128;    //recule 50%               //vers nord
+      att 80;     //2 sec (80*25 ms)
+
+      trg;        //rotation à gauche 90      //vers ouest
+
+      trg;        //rotation à gauche 90      //vers sud
+
+      trg;        //rotation à gauche 90      //vers est
+
+      trg;        //rotation à gauche 90      //vers nord
+    fbc;
+
+    mar;        //arreter moteurs
+    mof;        //Eteindre matrice 4x4
+    att 80;
+
+    mon 240;  //Allumer matrice 4x4 (deux premières colonnes seulement)
+    dbc 1;
+      trd;        //rotation à droite 90      //vers est
+
+      trg;        //rotation à gauche 90      //vers nord
+
+      mav 255;
+      att 80;
+
+      trg;        //rotation à gauche 90      //vers ouest
+
+      trd;        //rotation à gauche 90      //vers nord
+    fbc;
+
+
+    mar;        //arreter moteurs
+    mof;        //Eteindre matrice 4x4
+    att 80;
+
+    ////Le clignotement rouge indique la fin de la choregraphie
+    dbc 2;
+      dal 255;    //rouge
+      att 40;
+      det;    //eteindre del
+      att 40;
+    fbc;
+FIN;
